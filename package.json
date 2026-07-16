@@ -1,0 +1,19 @@
+{
+  "name": "hersphere-platform",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "HerSphere - AI-powered career success platform for women.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "start:backend": "node apps/backend/src/server.js",
+    "start:frontend": "node apps/frontend/dev-server.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/run-tests.js",
+    "verify": "node scripts/verify.js",
+    "reset:data": "node scripts/reset-data.js"
+  }
+}

@@ -1,0 +1,59 @@
+erDiagram
+  USERS ||--o{ AUTH_VERIFICATION_TOKENS : owns
+  USERS ||--o| CANDIDATE_PROFILES : has
+  USERS ||--o| RECRUITER_PROFILES : has
+  COMPANIES ||--o{ RECRUITER_PROFILES : employs
+  COMPANIES ||--o{ OPPORTUNITIES : posts
+  CANDIDATE_PROFILES ||--o{ CANDIDATE_EDUCATION : includes
+  CANDIDATE_PROFILES ||--o{ CANDIDATE_SKILLS : includes
+  CANDIDATE_PROFILES ||--o{ CANDIDATE_PROJECTS : includes
+  CANDIDATE_PROFILES ||--o{ CANDIDATE_EXPERIENCES : includes
+  CANDIDATE_PROFILES ||--o{ CANDIDATE_CERTIFICATIONS : includes
+  CANDIDATE_PROFILES ||--o{ CANDIDATE_ACHIEVEMENTS : includes
+  CANDIDATE_PROFILES ||--o{ CANDIDATE_LINKS : includes
+  SKILLS ||--o{ CANDIDATE_SKILLS : maps
+  SKILLS ||--o{ OPPORTUNITY_SKILLS : maps
+  OPPORTUNITIES ||--o{ OPPORTUNITY_SKILLS : requires
+  OPPORTUNITIES ||--o{ OPPORTUNITY_PROJECT_SIGNALS : signals
+  OPPORTUNITIES ||--o{ OPPORTUNITY_CERTIFICATIONS : prefers
+  OPPORTUNITIES ||--o{ APPLICATIONS : receives
+  USERS ||--o{ APPLICATIONS : submits
+  USERS ||--o{ BOOKMARKS : saves
+  OPPORTUNITIES ||--o{ BOOKMARKS : bookmarked
+  APPLICATIONS ||--o{ INTERVIEWS : schedules
+  COMPANIES ||--o{ COMPANY_REVIEWS : reviewed
+  COMPANY_REVIEWS ||--|| COMPANY_REVIEW_RATINGS : has
+  USERS ||--o{ NOTIFICATIONS : receives
+  USERS ||--o{ AUDIT_LOGS : acts
+
+  USERS {
+    uuid id PK
+    user_role role
+    citext email UK
+    text password_hash
+    user_status status
+  }
+  COMPANIES {
+    uuid id PK
+    varchar slug UK
+    verification_status verification_status
+  }
+  OPPORTUNITIES {
+    uuid id PK
+    uuid company_id FK
+    uuid created_by FK
+    opportunity_type type
+    opportunity_status status
+  }
+  APPLICATIONS {
+    uuid id PK
+    uuid opportunity_id FK
+    uuid candidate_user_id FK
+    application_status status
+  }
+  COMPANY_REVIEWS {
+    uuid id PK
+    uuid company_id FK
+    uuid user_id FK
+    review_status status
+  }

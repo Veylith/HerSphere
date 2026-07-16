@@ -1,0 +1,43 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: hersphere
+      POSTGRES_USER: hersphere
+      POSTGRES_PASSWORD: hersphere
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ../database/migrations:/docker-entrypoint-initdb.d:ro
+
+  backend:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile.backend
+    environment:
+      NODE_ENV: production
+      PORT: 4000
+      JWT_SECRET: replace-with-a-strong-production-secret
+      CSRF_SECRET: replace-with-a-different-production-secret
+      CORS_ORIGINS: http://localhost:5173
+      DATABASE_URL: postgres://hersphere:hersphere@postgres:5432/hersphere
+    ports:
+      - "4000:4000"
+    depends_on:
+      - postgres
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile.frontend
+    environment:
+      FRONTEND_PORT: 5173
+      PORT: 4000
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:

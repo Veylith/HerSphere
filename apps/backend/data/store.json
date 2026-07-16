@@ -1,0 +1,538 @@
+{
+  "users": [
+    {
+      "id": "user-candidate-priya",
+      "role": "candidate",
+      "name": "Priya Menon",
+      "email": "candidate@hersphere.test",
+      "passwordHash": "pbkdf2:120000:0f6f0cbc49e4aff2f7d6a649d7baf909:366a781a6225416bb4b7247c4244dd56544c911bcf5a757dabc7456aa8d1c94d",
+      "emailVerified": true,
+      "status": "active",
+      "profileId": "profile-priya",
+      "createdAt": "2026-07-15T12:00:00.000Z",
+      "updatedAt": "2026-07-15T12:00:00.000Z"
+    },
+    {
+      "id": "user-recruiter-anjali",
+      "role": "recruiter",
+      "name": "Anjali Rao",
+      "email": "recruiter@hersphere.test",
+      "passwordHash": "pbkdf2:120000:0f6f0cbc49e4aff2f7d6a649d7baf909:366a781a6225416bb4b7247c4244dd56544c911bcf5a757dabc7456aa8d1c94d",
+      "emailVerified": true,
+      "status": "active",
+      "companyId": "company-novalytics",
+      "recruiterApproved": true,
+      "createdAt": "2026-07-15T12:00:00.000Z",
+      "updatedAt": "2026-07-15T12:00:00.000Z"
+    },
+    {
+      "id": "user-admin-maya",
+      "role": "admin",
+      "name": "Maya Sharma",
+      "email": "admin@hersphere.test",
+      "passwordHash": "pbkdf2:120000:0f6f0cbc49e4aff2f7d6a649d7baf909:366a781a6225416bb4b7247c4244dd56544c911bcf5a757dabc7456aa8d1c94d",
+      "emailVerified": true,
+      "status": "active",
+      "createdAt": "2026-07-15T12:00:00.000Z",
+      "updatedAt": "2026-07-15T12:00:00.000Z"
+    },
+    {
+      "id": "b84ef235-2d0b-479e-aba6-a7c0c2ea8e33",
+      "createdAt": "2026-07-16T14:27:26.827Z",
+      "updatedAt": "2026-07-16T14:27:26.827Z",
+      "role": "candidate",
+      "name": "Nisha Verma",
+      "email": "nisha@example.test",
+      "passwordHash": "pbkdf2:120000:32f7740d65177ff52fea78dfaae7f8af:96d8f2c61b9fb1b149bdf63550f8f18fb9a61fae752466f2341083a246c88b3c",
+      "emailVerified": false,
+      "emailVerificationToken": "59edb1ae-e35b-4898-8bb5-ba80a10360f4",
+      "status": "active",
+      "profileId": "e63b318f-5140-4775-af53-572b462f50c1",
+      "companyId": null,
+      "recruiterApproved": true
+    }
+  ],
+  "candidateProfiles": [
+    {
+      "id": "profile-priya",
+      "userId": "user-candidate-priya",
+      "headline": "Frontend engineer moving into full-stack AI products",
+      "location": "Bengaluru, India",
+      "careerGoal": "AI Product Engineer",
+      "interests": [
+        "AI",
+        "React",
+        "Accessibility",
+        "Women in Tech"
+      ],
+      "education": [
+        "B.Tech Computer Science, PES University",
+        "- B.Tech Computer Science, PES University"
+      ],
+      "skills": [
+        "JavaScript",
+        "React",
+        "CSS",
+        "Node.js",
+        "SQL",
+        "Accessibility",
+        "Communication",
+        "Css",
+        "Java",
+        "Javascript",
+        "Sql"
+      ],
+      "projects": [
+        "Built a responsive career dashboard in React with authenticated API integration",
+        "Designed an accessible mentor matching prototype for women returning to work",
+        "Built a responsive career dashboard in React with authenticated API integration.",
+        "Built production web interfaces, dashboards, and design system components.",
+        "",
+        "- Built a responsive career dashboard in React with authenticated API integration",
+        "- Designed an accessible mentor matching prototype for women returning to work",
+        "- Built a responsive career dashboard in React with authenticated API integration."
+      ],
+      "experience": [
+        {
+          "title": "Frontend Engineer",
+          "company": "BrightApps",
+          "years": 2.5,
+          "summary": "Built production web interfaces, dashboards, and design system components."
+        }
+      ],
+      "experienceYears": 2.5,
+      "certifications": [
+        "Meta Front-End Developer Professional Certificate",
+        "Professional Certificate",
+        "Meta Front-End Developer Professional Certificate.",
+        "- Meta Front-End Developer Professional Certificate",
+        "- Professional Certificate",
+        "- Meta Front-End Developer Professional Certificate."
+      ],
+      "achievements": [
+        "Finalist at Women in AI hackathon 2025",
+        "Achievement: Finalist at Women in AI hackathon 2025.",
+        "- Finalist at Women in AI hackathon 2025",
+        "- Achievement: Finalist at Women in AI hackathon 2025."
+      ],
+      "portfolioLinks": [
+        "https://portfolio.example/priya",
+        "https://github.com/priya-example"
+      ],
+      "resumeText": "Priya Menon\nFrontend engineer moving into full-stack AI products | Bengaluru, India\nPortfolio: https://portfolio.example/priya | https://github.com/priya-example\n\nCAREER GOAL\nAI Product Engineer\n\nSKILLS\nJavaScript, React, CSS, Node.js, SQL, Accessibility, Communication, Css, Java, Javascript, Sql\n\nEXPERIENCE\nFrontend Engineer - BrightApps (2.5 years)\nBuilt production web interfaces, dashboards, and design system components.\n\nPROJECTS\n- Built a responsive career dashboard in React with authenticated API integration\n- Designed an accessible mentor matching prototype for women returning to work\n- Built a responsive career dashboard in React with authenticated API integration.\n\nEDUCATION\n- B.Tech Computer Science, PES University\n\nCERTIFICATIONS\n- Meta Front-End Developer Professional Certificate\n- Professional Certificate\n- Meta Front-End Developer Professional Certificate.\n\nACHIEVEMENTS\n- Finalist at Women in AI hackathon 2025\n- Achievement: Finalist at Women in AI hackathon 2025.",
+      "verifiedPortfolio": true,
+      "updatedAt": "2026-07-16T17:35:02.968Z"
+    },
+    {
+      "id": "e63b318f-5140-4775-af53-572b462f50c1",
+      "createdAt": "2026-07-16T14:27:26.808Z",
+      "updatedAt": "2026-07-16T14:27:42.413Z",
+      "userId": "b84ef235-2d0b-479e-aba6-a7c0c2ea8e33",
+      "headline": "Career explorer",
+      "location": "",
+      "careerGoal": "",
+      "interests": [
+        "React",
+        "SQL",
+        "Product Management"
+      ],
+      "education": [],
+      "skills": [
+        "React",
+        "SQL",
+        "Product Management",
+        "Sql"
+      ],
+      "projects": [
+        "",
+        "Add projects in your profile."
+      ],
+      "experience": [],
+      "experienceYears": 0,
+      "certifications": [
+        "Add certifications in your profile."
+      ],
+      "achievements": [],
+      "portfolioLinks": [],
+      "resumeText": "Nisha Verma\nCareer explorer | Location\n\nCAREER GOAL\nAdd a focused career goal in your profile.\n\nSKILLS\nReact, SQL, Product Management\n\nEXPERIENCE\nAdd experience in your profile.\n\nPROJECTS\nAdd projects in your profile.\n\nEDUCATION\nAdd education in your profile.\n\nCERTIFICATIONS\nAdd certifications in your profile.\n\nACHIEVEMENTS\nAdd achievements in your profile.",
+      "verifiedPortfolio": false
+    }
+  ],
+  "companies": [
+    {
+      "id": "company-novalytics",
+      "name": "Novalytics AI",
+      "slug": "novalytics-ai",
+      "industry": "AI SaaS",
+      "location": "Bengaluru, India",
+      "website": "https://novalytics.example",
+      "size": "201-500",
+      "verificationStatus": "verified",
+      "safetyPolicyUrl": "https://novalytics.example/safety",
+      "description": "Novalytics AI builds analytics copilots for operations teams and runs a documented inclusive hiring program.",
+      "createdAt": "2026-07-15T12:00:00.000Z",
+      "updatedAt": "2026-07-15T12:00:00.000Z"
+    },
+    {
+      "id": "company-lumora",
+      "name": "Lumora Health",
+      "slug": "lumora-health",
+      "industry": "HealthTech",
+      "location": "Hyderabad, India",
+      "website": "https://lumora.example",
+      "size": "51-200",
+      "verificationStatus": "verified",
+      "safetyPolicyUrl": "",
+      "description": "A health data startup hiring for privacy-first product and engineering teams.",
+      "createdAt": "2026-07-15T12:00:00.000Z",
+      "updatedAt": "2026-07-16T17:36:15.581Z"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "job-ai-product-engineer",
+      "type": "job",
+      "title": "AI Product Engineer",
+      "companyId": "company-novalytics",
+      "createdBy": "user-recruiter-anjali",
+      "location": "Bengaluru",
+      "remote": "hybrid",
+      "employmentType": "Full-time",
+      "salaryRange": "INR 18L-28L",
+      "description": "Build user-facing AI workflows, connect product analytics to model outputs, and collaborate with design and data teams.",
+      "requiredSkills": [
+        "React",
+        "Node.js",
+        "SQL",
+        "Machine Learning",
+        "Accessibility"
+      ],
+      "niceToHaveSkills": [
+        "Product Management",
+        "LLM",
+        "Docker"
+      ],
+      "projectSignals": [
+        "react",
+        "api",
+        "machine learning",
+        "dashboard"
+      ],
+      "preferredCertifications": [
+        "Meta Front-End Developer Professional Certificate"
+      ],
+      "minExperience": 2,
+      "status": "active",
+      "postedAt": "2026-07-15T12:00:00.000Z",
+      "closesAt": "2026-08-15T12:00:00.000Z"
+    },
+    {
+      "id": "job-data-product-analyst",
+      "type": "job",
+      "title": "Data Product Analyst",
+      "companyId": "company-lumora",
+      "createdBy": "user-recruiter-anjali",
+      "location": "Hyderabad",
+      "remote": "remote",
+      "employmentType": "Full-time",
+      "salaryRange": "INR 12L-18L",
+      "description": "Own metric definitions, build dashboards, and translate user research into product insights.",
+      "requiredSkills": [
+        "SQL",
+        "Power BI",
+        "Analytics",
+        "Product Management"
+      ],
+      "niceToHaveSkills": [
+        "Python",
+        "A/B Testing",
+        "Stakeholder Management"
+      ],
+      "projectSignals": [
+        "dashboard",
+        "metrics",
+        "research"
+      ],
+      "preferredCertifications": [
+        "Google Data Analytics Professional Certificate"
+      ],
+      "minExperience": 1,
+      "status": "active",
+      "postedAt": "2026-07-15T12:00:00.000Z",
+      "closesAt": "2026-08-15T12:00:00.000Z"
+    },
+    {
+      "id": "intern-accessibility-engineering",
+      "type": "internship",
+      "title": "Accessibility Engineering Intern",
+      "companyId": "company-novalytics",
+      "createdBy": "user-recruiter-anjali",
+      "location": "Remote",
+      "remote": "remote",
+      "employmentType": "Internship",
+      "salaryRange": "INR 35K/month",
+      "description": "Audit UI flows, improve keyboard navigation, and build accessible React components with mentors.",
+      "requiredSkills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Accessibility"
+      ],
+      "niceToHaveSkills": [
+        "React",
+        "User Research"
+      ],
+      "projectSignals": [
+        "accessibility",
+        "component",
+        "audit"
+      ],
+      "preferredCertifications": [],
+      "minExperience": 0,
+      "status": "active",
+      "postedAt": "2026-07-15T12:00:00.000Z",
+      "closesAt": "2026-08-15T12:00:00.000Z"
+    },
+    {
+      "id": "50dac06a-2452-4498-9f32-67feffd0e57c",
+      "createdAt": "2026-07-16T17:33:15.184Z",
+      "updatedAt": "2026-07-16T17:33:15.184Z",
+      "type": "job",
+      "title": "Backend Platform Engineer",
+      "companyId": "company-novalytics",
+      "createdBy": "user-recruiter-anjali",
+      "location": "Bengaluru",
+      "remote": "hybrid",
+      "employmentType": "Full-time",
+      "salaryRange": "Disclosed during process",
+      "description": "Build secure APIs, dashboards, and hiring intelligence workflows.",
+      "requiredSkills": [
+        "Node.js",
+        "SQL",
+        "Docker",
+        "JWT"
+      ],
+      "niceToHaveSkills": [
+        "React",
+        "Product Management"
+      ],
+      "projectSignals": [],
+      "preferredCertifications": [],
+      "minExperience": 0,
+      "status": "active",
+      "postedAt": "2026-07-16T17:33:15.184Z",
+      "closesAt": "2026-08-15T17:33:15.184Z"
+    }
+  ],
+  "applications": [
+    {
+      "id": "application-priya-ai-engineer",
+      "opportunityId": "job-ai-product-engineer",
+      "candidateId": "user-candidate-priya",
+      "status": "shortlisted",
+      "coverNote": "Excited to combine accessible frontend engineering with practical AI workflows.",
+      "eligibilitySnapshot": null,
+      "createdAt": "2026-07-15T12:00:00.000Z",
+      "updatedAt": "2026-07-16T17:33:31.743Z"
+    },
+    {
+      "id": "4bb13acd-66b4-4ff9-9d71-78d61ed18ef1",
+      "createdAt": "2026-07-16T17:34:25.739Z",
+      "updatedAt": "2026-07-16T17:34:25.739Z",
+      "opportunityId": "job-data-product-analyst",
+      "candidateId": "user-candidate-priya",
+      "status": "submitted",
+      "coverNote": "I am interested in this role and meet several key requirements.",
+      "eligibilitySnapshot": {
+        "eligibilityScore": 42,
+        "confidenceScore": 88,
+        "matchedRequired": [
+          "sql"
+        ],
+        "matchedNice": [],
+        "missingRequired": [
+          "power bi",
+          "analytics",
+          "product management"
+        ],
+        "experienceFit": 100,
+        "reasoning": [
+          "Matched 1 required skill.",
+          "Missing power bi, analytics, product management.",
+          "Experience requirement is satisfied."
+        ]
+      }
+    }
+  ],
+  "bookmarks": [
+    {
+      "id": "bookmark-priya-intern-accessibility",
+      "opportunityId": "intern-accessibility-engineering",
+      "candidateId": "user-candidate-priya",
+      "createdAt": "2026-07-15T12:00:00.000Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "review-novalytics-1",
+      "companyId": "company-novalytics",
+      "userId": "user-candidate-priya",
+      "verifiedEmployment": true,
+      "status": "published",
+      "title": "Supportive managers and visible mentorship",
+      "comment": "The culture is inclusive, managers encourage mentorship, and flexible hybrid hours help with work life balance. Safety policy and late-night transport support are documented.",
+      "ratings": {
+        "workCulture": 4.6,
+        "safety": 4.8,
+        "mentorship": 4.5,
+        "careerGrowth": 4.2,
+        "workLifeBalance": 4.4
+      },
+      "spam": {
+        "isSpam": false,
+        "reasons": []
+      },
+      "createdAt": "2026-07-15T12:00:00.000Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notification-priya-1",
+      "userId": "user-candidate-priya",
+      "title": "Application moved to review",
+      "body": "Novalytics AI is reviewing your AI Product Engineer application.",
+      "readAt": null,
+      "createdAt": "2026-07-15T12:00:00.000Z"
+    },
+    {
+      "id": "notification-recruiter-1",
+      "userId": "user-recruiter-anjali",
+      "title": "New candidate application",
+      "body": "Priya Menon applied for AI Product Engineer.",
+      "readAt": null,
+      "createdAt": "2026-07-15T12:00:00.000Z"
+    },
+    {
+      "id": "4f903e35-5a96-4eee-8521-548961b49e51",
+      "createdAt": "2026-07-16T17:33:21.764Z",
+      "updatedAt": "2026-07-16T17:33:21.764Z",
+      "userId": "user-candidate-priya",
+      "title": "Application status updated",
+      "body": "AI Product Engineer moved to interview.",
+      "readAt": null
+    },
+    {
+      "id": "363b08fb-b91d-418b-ae48-7ebb12d58bdd",
+      "createdAt": "2026-07-16T17:33:31.745Z",
+      "updatedAt": "2026-07-16T17:33:31.745Z",
+      "userId": "user-candidate-priya",
+      "title": "Application status updated",
+      "body": "AI Product Engineer moved to shortlisted.",
+      "readAt": null
+    },
+    {
+      "id": "fd7c15b8-a97c-4d2b-975f-a423c9ef0dc4",
+      "createdAt": "2026-07-16T17:34:25.742Z",
+      "updatedAt": "2026-07-16T17:34:25.742Z",
+      "userId": "user-recruiter-anjali",
+      "title": "New application received",
+      "body": "Priya Menon applied for Data Product Analyst.",
+      "readAt": null
+    }
+  ],
+  "interviews": [],
+  "auditLogs": [
+    {
+      "id": "26bf87fb-c25c-484a-ba44-a6c1477d29bf",
+      "createdAt": "2026-07-16T14:26:47.924Z",
+      "updatedAt": "2026-07-16T14:26:47.924Z",
+      "actorId": "user-candidate-priya",
+      "action": "auth.login",
+      "entityType": "user",
+      "entityId": "user-candidate-priya",
+      "metadata": {}
+    },
+    {
+      "id": "57c112b0-d821-44cd-866d-c66fd87f9875",
+      "createdAt": "2026-07-16T14:27:26.827Z",
+      "updatedAt": "2026-07-16T14:27:26.827Z",
+      "actorId": "b84ef235-2d0b-479e-aba6-a7c0c2ea8e33",
+      "action": "auth.register",
+      "entityType": "user",
+      "entityId": "b84ef235-2d0b-479e-aba6-a7c0c2ea8e33",
+      "metadata": {}
+    },
+    {
+      "id": "9b8e1c1a-3e80-4cec-b5f8-bcc3ed9aada0",
+      "createdAt": "2026-07-16T17:32:56.939Z",
+      "updatedAt": "2026-07-16T17:32:56.939Z",
+      "actorId": "user-candidate-priya",
+      "action": "auth.login",
+      "entityType": "user",
+      "entityId": "user-candidate-priya",
+      "metadata": {}
+    },
+    {
+      "id": "7a6b2af7-26b4-434c-af1c-bbe8a9a4a20e",
+      "createdAt": "2026-07-16T17:33:07.629Z",
+      "updatedAt": "2026-07-16T17:33:07.629Z",
+      "actorId": "user-recruiter-anjali",
+      "action": "auth.login",
+      "entityType": "user",
+      "entityId": "user-recruiter-anjali",
+      "metadata": {}
+    },
+    {
+      "id": "65bca392-7686-474e-af59-b09f903b2af2",
+      "createdAt": "2026-07-16T17:33:15.186Z",
+      "updatedAt": "2026-07-16T17:33:15.186Z",
+      "actorId": "user-recruiter-anjali",
+      "action": "recruiter.create_listing",
+      "entityType": "opportunity",
+      "entityId": "50dac06a-2452-4498-9f32-67feffd0e57c",
+      "metadata": {}
+    },
+    {
+      "id": "c0c94351-b089-4ace-9c12-270bc419da74",
+      "createdAt": "2026-07-16T17:34:18.485Z",
+      "updatedAt": "2026-07-16T17:34:18.485Z",
+      "actorId": "user-candidate-priya",
+      "action": "auth.login",
+      "entityType": "user",
+      "entityId": "user-candidate-priya",
+      "metadata": {}
+    },
+    {
+      "id": "5304fe11-1a90-4fd0-8c31-56d11c2bd915",
+      "createdAt": "2026-07-16T17:36:11.815Z",
+      "updatedAt": "2026-07-16T17:36:11.815Z",
+      "actorId": "user-admin-maya",
+      "action": "auth.login",
+      "entityType": "user",
+      "entityId": "user-admin-maya",
+      "metadata": {}
+    },
+    {
+      "id": "ba7be4ad-15e4-47bf-a93b-0566d7bd340e",
+      "createdAt": "2026-07-16T17:36:15.584Z",
+      "updatedAt": "2026-07-16T17:36:15.584Z",
+      "actorId": "user-admin-maya",
+      "action": "admin.verify_company",
+      "entityType": "company",
+      "entityId": "company-lumora",
+      "metadata": {
+        "verificationStatus": "verified"
+      }
+    },
+    {
+      "id": "d6e10773-87d1-4dee-8bc3-c1688e49e1f6",
+      "createdAt": "2026-07-16T17:38:02.712Z",
+      "updatedAt": "2026-07-16T17:38:02.712Z",
+      "actorId": "user-candidate-priya",
+      "action": "auth.login",
+      "entityType": "user",
+      "entityId": "user-candidate-priya",
+      "metadata": {}
+    }
+  ]
+}
