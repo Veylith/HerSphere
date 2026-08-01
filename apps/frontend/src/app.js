@@ -453,18 +453,28 @@ function renderRegister() {
             <label>Password<input name="password" type="password" required value="Password123!" /></label>
             <label>Role<select name="role"><option value="candidate">Candidate</option><option value="recruiter">Recruiter</option></select></label>
           </div>
-          <label>Company name<input name="companyName" value="Aster Labs" /></label>
-          <label>Skills or interests<input name="skills" value="React, SQL, Product Management" /></label>
+          <div id="company-field"></div>
           <button class="button primary" type="submit">Create account</button>
         </form>
       </article>
     </section>
   `);
+  const roleSelect = document.querySelector('#register-form select[name="role"]');
+  const companyField = document.querySelector("#company-field");
+  const syncCompanyField = () => {
+    companyField.innerHTML =
+      roleSelect.value === "recruiter"
+        ? `<label>Company name<input name="companyName" required value="Aster Labs" /></label>`
+        : "";
+  };
+  roleSelect.addEventListener("change", syncCompanyField);
+  syncCompanyField();
   document.querySelector("#register-form").addEventListener("submit", async (event) => {
     event.preventDefault();
     try {
       const body = serialize(event.currentTarget);
-      body.interests = body.skills || [];
+      body.interests = [];
+      if (body.role !== "recruiter") delete body.companyName;
       const payload = await api("/api/auth/register", { method: "POST", body });
       setSession(payload);
       toast("Account created");
